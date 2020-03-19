@@ -346,9 +346,9 @@
             $('#showmodal tbody').on( 'click', 'tr', function () {
                 var modal = table.row( this ).data();
                 console.log(modal)
-                $('#XVUsrCode').val(modal.XVUsrName);
-                $('#XVUsrCode_ID').val(modal.XVUsrCode);
-                showRights(modal.XVUsrCode)
+                $('#id').val(modal.id);
+                $('#name').val(modal.name);
+                showRights(modal.id)
                 $('#list-modal').modal('hide');
             } );
         function showRights(id){
